@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Closet Buddy (Fixed Webcam)</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.7.4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.5/dist/teachablemachine-image.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Your Color Catcher</h1>
+    <p>Show your clothes to the camera and press Let's start!</p>
+  </header>
+
+  <div class="container">
+    <video id="video" width="300" height="225" autoplay></video>
+    <br />
+    <button id="startButton">Let's Start</button>
+    <h2 id="predictionResult">Waiting for result...</h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
